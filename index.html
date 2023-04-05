@@ -9,6 +9,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" type="text/css" href="./header.css" />
+    <link rel="stylesheet" type="text/css" href="./general.css" />
     <title>Hello, world!</title>
     <style>
       body{
@@ -18,6 +20,312 @@
   </head>
 
   <body>
+    <div class="header">
+      <div class="header-left">
+          <div class="header-left__logo">
+              <img class="logo-img" src="./media/logo.svg" alt="">
+              <div class="logo-title">OwnVale</div>
+          </div>
+          <div class="header-left__search">
+              <!-- <div class="search-results">
+                  <div class="search-results__collections">
+                      <div class="collections__title">
+                          Collections
+                      </div>
+                      <div class="collections__line"></div>
+                      <div class="collections__items">
+                          <div class="collections__item">
+                              <div class="item-info">
+                                  <div class="item-info__logo">
+                                      <img src="./media/item_logo.svg" alt="">
+                                  </div>
+                                  <div class="item-info__description">
+                                      <div class="description__title">
+                                          <div class="description__title-name">DeGods</div>
+                                          <img src="./media/items_verifyed.svg" alt="">
+                                      </div>
+                                      <div class="description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-datetime">
+                                  Created in
+                                  <span style="color: #505050;">May 2020</span>
+                              </div>
+                          </div>
+                          <div class="collections__item">
+                              <div class="item-info">
+                                  <div class="item-info__logo">
+                                      <img src="./media/item_logo.svg" alt="">
+                                  </div>
+                                  <div class="item-info__description">
+                                      <div class="description__title">
+                                          <div class="description__title-name">DeGods</div>
+                                          <img src="./media/items_verifyed.svg" alt="">
+                                      </div>
+                                      <div class="description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-datetime">
+                                  Created in
+                                  <span style="color: #505050;">May 2020</span>
+                              </div>
+                          </div>
+                          <div class="collections__item">
+                              <div class="item-info">
+                                  <div class="item-info__logo">
+                                      <img src="./media/item_logo.svg" alt="">
+                                  </div>
+                                  <div class="item-info__description">
+                                      <div class="description__title">
+                                          <div class="description__title-name">DeGods</div>
+                                          <img src="./media/items_verifyed.svg" alt="">
+                                      </div>
+                                      <div class="description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-datetime">
+                                  Created in
+                                  <span style="color: #505050;">May 2020</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="collections__all">
+                          Search all collections
+                      </div>
+                  </div>
+      
+              </div> -->
+              <form class="search">
+                  <img src="./media/search.svg" width="25" height="25">
+                  <input type="search" class="inputSearch" placeholder="Search" aria-label="Search">
+              </form>
+
+          </div>
+
+          <div class="header-left__link">Link 1</div>
+          <div class="header-left__link">Link 2</div>
+          <div class="header-left__link">Link 3</div>
+  
+      </div>
+      <div class="header-right">
+          <!-- <div class="signup_btn">Sign Up</div>
+          <div class="login_btn">Login</div> -->
+          <div class="header-right__items">
+              <div class="header-right__item">
+                  <img src="./media/night_mode.svg" alt="">
+              </div>
+              <div class="header-right__item">
+                  <input id="translate_btn" type="checkbox" />
+                  <label for="translate_btn">
+                      <img src="./media/translate.svg" alt="">
+                  </label>
+                  <div class="translate_menu">
+                      <div class="translate_menu__language">
+                          Language 1
+                      </div>
+                      <div class="translate_menu__language">
+                          Language 2
+                      </div>
+                      <div class="translate_menu__language">
+                          Language 3
+                      </div>
+                  </div>
+              </div>
+              <div class="header-right__item">
+                  <img class="header-right__item-divider" src="./media/header_divide_line.svg" alt="">
+              </div>
+              <div class="header-right__item">
+                  <img src="./media/notification.svg" alt="">
+              </div>
+          </div>
+  
+          <div class="header-right__item-search">
+              <input id="searchbar-mobile" type="checkbox" />
+              <label for="searchbar-mobile">
+                  <img src="./media/search_mob.svg" alt="">
+              </label>
+              <div  class="search-mobile">
+          
+                  <form class="search-mobile__searchbar">
+                          <img id="searchbar-back" tabindex="0" src="./media/search_back.svg">
+                      <input type="search" class="search-mobile__placeholder" placeholder="Search" aria-label="Search">
+                  </form>
+                  <div class="search-mobile__borderline"></div>
+                  <div class="search-mobile__results">
+                      <div class="results__category">
+                          <img src="./media/popular-icon-big.svg" alt=""> 
+                          Popular
+                      </div>
+                      <div class="results__items">
+                          <div class="results__item">
+                              <div class="results__item-info">
+                                  <div class="results__item-info__logo">
+                                      <img src="./media/collection-avatar.svg" alt="">
+                                  </div>
+                                  <div class="results__item-info__description">
+                                      <div class="results__item-info__description__title">
+                                          <div class="results__item-info__description__title-name">DeGods</div>
+                                          <img src="./media/verification-badge.svg" alt="">
+                                      </div>
+                                      <div class="results__item-info__description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                      <div class="results__item__datetime">
+                                          Created in
+                                          <span style="color: #505050;">May 2020</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="results__item">
+                              <div class="results__item-info">
+                                  <div class="results__item-info__logo">
+                                      <img src="./media/collection-avatar.svg" alt="">
+                                  </div>
+                                  <div class="results__item-info__description">
+                                      <div class="results__item-info__description__title">
+                                          <div class="results__item-info__description__title-name">DeGods</div>
+                                          <img src="./media/verification-badge.svg" alt="">
+                                      </div>
+                                      <div class="results__item-info__description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                      <div class="results__item__datetime">
+                                          Created in
+                                          <span style="color: #505050;">May 2020</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="results__item">
+                              <div class="results__item-info">
+                                  <div class="results__item-info__logo">
+                                      <img src="./media/collection-avatar.svg" alt="">
+                                  </div>
+                                  <div class="results__item-info__description">
+                                      <div class="results__item-info__description__title">
+                                          <div class="results__item-info__description__title-name">DeGods</div>
+                                          <img src="./media/verification-badge.svg" alt="">
+                                      </div>
+                                      <div class="results__item-info__description__items">
+                                          <img src="./media/items_count.svg" alt=""> 1000 items
+                                      </div>
+                                      <div class="results__item__datetime">
+                                          Created in 
+                                          <span style="color: #505050;">May 2020</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+          <div class="header-right__item">
+              <input id="profile-page" type="checkbox" />
+              <label for="profile-page">
+                  <div class="user__img-mobile"></div>
+              </label>
+              <input id="profile-page-desktop" type="checkbox" />
+              <label for="profile-page-desktop">
+                  <div class="user__img"></div>
+              </label>
+              <div class="profile__page">
+                  <div class="profile__page-main">
+                      <div class="profile__avatar"></div>
+                      <div class="profile__name">Nayble</div>
+                  </div>
+                  <div class="profile__credentials">
+                      <div class="profile__credentials-id">
+                         <img class="profile__credentials-icon" src="./media/metamask-icon_1.svg" alt="">
+                         0х023230006...
+                      </div>
+                      <div class="profile__credentials-wallet">
+                          My wallet
+                      </div>
+                  </div>
+                  <div class="profile__page-borderline"></div>
+                  <div class="profile__page__options">
+                      <div class="profile__page__option">Profile</div>
+                      <div class="profile__page__option">Notification</div>
+                      <div class="profile__page__option">Watchlist</div>
+                      <div class="profile__page__option">Settings</div>
+                      <div class="profile__page__option">Log out</div>
+                  </div>
+              </div>
+              <div class="profile-nav">
+                  <div class="profile-nav__usercard">
+                      <div class="usercard">
+                          <div class="usercard__avatar"></div>
+                          <div class="usercard__description">
+                              <div class="usercard__description-nickname">
+                                  Nayble
+                              </div>
+                              <div class="usercard__description-id">
+                                  <img width="25" height="24" src="./media/metamask-icon.svg" alt="">
+                                  <div class="usercard__description-number">0х023230006...</div>
+                              </div>
+                              <div class="usercard__description-wallet">
+                                  My wallet
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="profile-nav__line"></div>
+                  <div class="profile-nav__options">
+                      <div class="profile-nav__option">
+                          Profile
+                      </div>
+                      <div class="profile-nav__option">
+                          Watchlist
+                      </div>
+                      <div class="profile-nav__option">
+                          Settings
+                      </div>
+                      <div class="profile-nav__option">
+                          Log out
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="header-right__item-burger">
+              <input id="menu-toggle" type="checkbox" onChange="checked_headermobile(this)"/>
+              <label id="hamburger-menu" class='menu-button-container' for="menu-toggle">
+                  <div class="menu-button__burger">
+                      <div class='menu-button'></div>
+                  </div>
+                  <nav id="sidebar-menu">
+                      <ul>
+                        <li>Link 1</li>
+                        <li><a href="#">Link 2</a></li>
+                        <li>Link 3</li>
+                        <li class="menu-options">
+                          <div class="menu-options__buttons">
+                              <div class="menu-options__btn">
+                                  <img src="./media/night_mode.svg" alt="">
+                              </div>
+                              <div class="menu-options__btn">
+                                  <img src="./media/translate.svg" alt="">
+                              </div>
+                          </div>
+                          
+                      </li>
+                      </ul>
+                    </nav>
+              </label>
+              
+          </div>
+  
+      </div>
+  </div>
     <div class="carousel-swiper">
       <section>
           <div class="slider">
@@ -613,4 +921,15 @@ $('.slider').slick({
             }]
         });
   </script>
+  <script>
+    function checked_headermobile(_this) {
+      if (_this.checked) {
+        document.getElementsByTagName("html")[0].style.height = '100%';
+        document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
+      } else {
+        document.getElementsByTagName("html")[0].style.overflowY = 'auto';
+        document.getElementsByTagName("html")[0].style.height = 'auto';
+      }
+    }
+</script>
 </html>
