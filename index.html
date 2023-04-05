@@ -16,7 +16,6 @@
       body{
         overscroll-behavior-y: contain;
       }
-      html, body {margin: 0; height: 100%; overflow: hidden}
     </style>
   </head>
 
@@ -528,6 +527,59 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+1
+<br>
+<br>
+1
+1
+1
+<br>
+11
+<br>
+1
+<br>
+<br>
+1
+<br>
+<br>
+1
+<br>
+<br>
+1
+1
+1
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -579,7 +631,8 @@ class DraggingEvent {
       handler = callback(e)
       
       window.addEventListener("touchmove", handler)
-      
+      document.getElementsByTagName("html")[0].style.height = '95%';
+      document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
       window.addEventListener("touchend", clearDraggingEvent)
       
       document.body.addEventListener("mouseleave", clearDraggingEvent)
@@ -587,7 +640,8 @@ class DraggingEvent {
       function clearDraggingEvent() {
         window.removeEventListener("touchmove", handler)
         window.removeEventListener("touchend", clearDraggingEvent)
-        
+        document.getElementsByTagName("html")[0].style.overflowY = 'auto';
+        document.getElementsByTagName("html")[0].style.height = 'auto';
         handler(null)
       }
     })
@@ -732,16 +786,13 @@ class CardCarousel extends DraggingEvent {
     
     if (x < 0) {
       formula = (scale * 100 - this.cardWidth) / 2
-      
       return formula
 
     } else if (x > 0) {
       formula = 100 - (scale * 100 + this.cardWidth) / 2
-      
       return formula
     } else {
       formula = 100 - (scale * 100 + this.cardWidth) / 2
-      
       return formula
     }
   }
@@ -789,6 +840,7 @@ class CardCarousel extends DraggingEvent {
       card.style.zIndex = data.zIndex  
       
     }
+
   }
   
   calcScale2(x) {
@@ -844,6 +896,7 @@ class CardCarousel extends DraggingEvent {
   }
   
   moveCards(data) {
+
     let xDist;
     
     if (data != null) {
@@ -891,7 +944,9 @@ class CardCarousel extends DraggingEvent {
         scale: scale,
         leftPos: leftPos
       })
+
     }
+
   }
 }
 
