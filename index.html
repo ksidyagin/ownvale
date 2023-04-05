@@ -636,11 +636,12 @@
       })
 
       this.target.addEventListener("touchstart", e => {
-        handler = callback(e)
         document.getElementsByTagName("html")[0].style.height = '95%';
         document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
         document.getElementsByTagName("body")[0].style.height = '95%';
         document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
+        handler = callback(e)
+
         window.addEventListener("touchmove", handler)
 
         window.addEventListener("touchend", clearDraggingEvent)
@@ -651,10 +652,13 @@
           window.removeEventListener("touchmove", handler)
           window.removeEventListener("touchend", clearDraggingEvent)
           handler(null)
-          document.getElementsByTagName("html")[0].style.overflowY = 'auto';
-          document.getElementsByTagName("html")[0].style.height = 'auto';
-          document.getElementsByTagName("body")[0].style.overflowY = 'auto';
-          document.getElementsByTagName("body")[0].style.height = 'auto';
+          setTimeout(() => {
+            document.getElementsByTagName("html")[0].style.overflowY = 'auto';
+            document.getElementsByTagName("html")[0].style.height = 'auto';
+            document.getElementsByTagName("body")[0].style.overflowY = 'auto';
+            document.getElementsByTagName("body")[0].style.height = 'auto';
+          }, 500);
+
         }
       })
     }
