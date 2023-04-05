@@ -219,7 +219,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
         //Это вставить//
-        var lastY = 1;
+        var lastY = 0.5;
     document.addEventListener("touchmove", function (event) {
         var lastS = document.documentElement.scrollTop;
         if (lastS == 0 && (lastY - event.touches[0].clientY) < 0 && event.cancelable) {
@@ -245,14 +245,14 @@ class DraggingEvent {
       
       handler = callback(e)
       
-      window.addEventListener("mousemove", handler)
+      // window.addEventListener("mousemove", handler)
       
       document.addEventListener("mouseleave", clearDraggingEvent)
       
       window.addEventListener("mouseup", clearDraggingEvent)
       
       function clearDraggingEvent() {
-        window.removeEventListener("mousemove", handler)
+        // window.removeEventListener("mousemove", handler)
         window.removeEventListener("mouseup", clearDraggingEvent)
       
         document.removeEventListener("mouseleave", clearDraggingEvent)
