@@ -920,8 +920,17 @@ $('.slider').slick({
 
             }]
         });
+      $('card-carousel').slick({
+        swipe: function(event, slick, direction){
+          var angle = Math.abs(event.originalEvent.touches[0].pageY - event.originalEvent.touches[0].pageX);
+          if(angle > 45){
+            return false;
+          }
+        }
+      });
   </script>
   <script>
+
     function checked_headermobile(_this) {
       if (_this.checked) {
         document.getElementsByTagName("html")[0].style.height = '100%';
