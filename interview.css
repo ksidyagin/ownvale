@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+body{
+    text-align: center;
+    color: #404040;
+}
+
+#multi-step-form-container {
+    margin-top: 48px;
+}
+.text-center {
+    text-align: center;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.pl-0 {
+    padding-left: 0;
+}
+.button {
+    padding: 0.5rem 2rem;
+    background: #5B5BA3;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+}
+.submit-btn {
+    background: #439A63;
+    border-radius: 15px;
+}
+.mt-3 {
+    margin-top: 2rem;
+}
+.d-none {
+    display: none;
+}
+.form-step {
+    border-radius: 20px;
+}
+.font-normal {
+    font-weight: normal;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    color: #505050;
+    margin-bottom: 26px;
+}
+ul.form-stepper {
+    counter-reset: section;
+    margin-bottom: 48px;
+}
+ul.form-stepper .form-stepper-circle {
+    position: relative;
+}
+ul.form-stepper .form-stepper-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.form-stepper-horizontal {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+ul.form-stepper > li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+.form-stepper-horizontal > li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+}
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    content: "";
+    top: 32%;
+}
+.form-stepper-horizontal li:after {
+    background-color: #dee2e6;
+}
+.form-stepper-horizontal li.form-stepper-completed:after {
+    background-color: #5A5AA6;
+}
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+ul.form-stepper li a .form-stepper-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+}
+.form-stepper .form-stepper-active .form-stepper-circle {
+    background-color: #7290DB !important;
+    color: #fff;
+}
+.form-stepper .form-stepper-active .label {
+    color: #7290DB !important;
+}
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+    background-color: #7290DB !important;
+    color: #fff !important;
+}
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+    background-color: #f8f7ff;
+}
+.form-stepper .form-stepper-completed .form-stepper-circle {
+    background-color: #5A5AA6 !important;
+    color: #fff;
+}
+.form-stepper .form-stepper-completed .label {
+    color: #5A5AA6 !important;
+}
+.form-stepper .form-stepper-completed .form-stepper-circle:hover {
+    background-color: #3B5FB9 !important;
+    color: #fff !important;
+}
+.form-stepper .form-stepper-active span.text-muted {
+    color: #fff !important;
+}
+.form-stepper .form-stepper-completed span.text-muted {
+    color: #fff !important;
+}
+.form-stepper .label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.form-stepper a {
+    cursor: default;
+}
+
+.col{
+    padding: 5px;
+}
+
+.form-stepper-horizontal li:not(:last-child):after{
+    height: 4px!important;
+    top: 28%!important;
+}
+.mx-2{
+    margin: 0!important;
+    text-decoration: none!important;
+}
+ul.form-stepper li a .form-stepper-circle{
+    height: 35px!important;
+    width: 35px!important;
+}
+.form-stepper .form-stepper-active .form-stepper-circle{
+    height: 35px!important;
+    width: 35px!important;
+}
+
+.form-stepper .label{
+    font-family: 'Inter'!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
+    color: #505050!important;
+    text-decoration: none!important;
+}
+ul.form-stepper .form-stepper-circle span{
+    font-family: 'Inter'!important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
+}
+.nft-formats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.nft-format{
+    max-width: 160px;
+}
+.nft-format__card{
+    margin: 0 auto;
+}
+.nft-format__card img{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #5B5BA3;
+    border-right: 2px solid #5B5BA3;
+    border-left: 2px solid #5B5BA3;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+
+.nft-format__descr{
+    text-align: center;
+    padding: 8px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    color: #5B5BA3;
+    border-right: 2px solid #5B5BA3;
+    border-bottom: 2px solid #5B5BA3;
+    border-left: 2px solid #5B5BA3;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    cursor: pointer;
+    width: 100%;
+}
+.nft-format__descr:hover{
+    transition: 0.5s;
+    background-color: #5B5BA3;
+    color: #fff;
+}
+
+.stepper__btns{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+    .font-normal {
+        font-weight: normal;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #505050;
+        margin-bottom: 42px;
+    }
+    ul.form-stepper li a .form-stepper-circle{
+        height: 66px!important;
+        width: 66px!important;
+    }
+    .form-stepper .form-stepper-active .form-stepper-circle{
+        height: 66px!important;
+        width: 66px!important;
+    }
+    .button {
+        width: 141px;
+    }
+    .nft-formats{
+        gap: 28px;
+    }
+    .nft-format__descr{
+        font-size: 20px;
+        line-height: 24px;
+        padding: 16px 0;
+    }
+
+}
+@media (min-width: 1400px) {
+    .nft-format{
+        max-width: 246px;
+    }
+    .stepper__btns{
+        margin-bottom: 80px;
+    }
+}
+

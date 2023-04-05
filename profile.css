@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+
+.profile-account {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-account__navbar {
+    background-color: #fafafe;
+    padding-top: 48px;
+    padding-left: 11%;
+    min-height: 100vh;
+    width: 23%;
+}
+
+.navbar-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #303030;
+    margin-bottom: 8px;
+}
+
+.navbar-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #505050;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    transition: 0.5s;
+    color: #909090;
+}
+
+.profile-navmobile {
+    display: none;
+    padding: 0 48px;
+    margin-top: 24px;
+}
+
+.profile-navmobile__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #303030;
+    margin-bottom: 24px;
+}
+
+.profile-navmobile__tabs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 33px;
+}
+
+.profile-navmobile__tab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+    cursor: pointer;
+}
+
+.profile-navmobile__tab:hover {
+    color: #909090;
+    transition: 0.5s;
+}
+
+.profile-account__main {
+    background-color: #fff;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.25);
+    min-height: 100vh;
+    padding: 48px;
+    width: 77%;
+}
+
+.profile-account__main-container {
+    max-width: 844px;
+}
+
+.main-avatar {
+    background: #F0F0F0;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+}
+
+.main-avatar__icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    margin-left: 40px;
+    background: linear-gradient(217.69deg, #9FC6A3 11.31%, #669966 52.6%);
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-top: 98px;
+
+}
+
+.main-info__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.field__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #505050;
+    margin-bottom: 8px;
+}
+
+.field__input {
+    width: 516px;
+    height: 51px;
+    background-color: rgba(208, 208, 208, 0.25);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 16px;
+}
+
+.field__textarea {
+    width: 516px;
+    height: 100px;
+    background-color: rgba(208, 208, 208, 0.25);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 16px;
+    resize: none;
+}
+
+.main-info__additional {
+    width: 280px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.main-info__field-datebirth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.datebirth__birthday {
+    width: 234px;
+    height: 48px;
+    background-color: rgba(208, 208, 208, 0.25);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 16px;
+}
+
+.form-select {
+    width: 234px !important;
+    height: 48px !important;
+    background-color: rgba(208, 208, 208, 0.25) !important;
+    border-radius: 15px !important;
+    outline: none !important;
+    border: none !important;
+    padding: 0 16px !important;
+}
+
+@media (max-width: 570px) {
+    .main-info__field-datebirth {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .datebirth__birthday {
+        width: auto;
+    }
+
+    .form-select {
+        width: auto !important;
+    }
+    .profile-navmobile__tabs {
+        gap: 18px;
+    }
+    
+    .profile-navmobile__tab {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .main-avatar {
+        height: 121px;
+    }
+
+    .main-avatar__icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-info {
+        margin-top: 48px;
+    }
+
+    .main-avatar__icon {
+        margin-left: 24px;
+        margin-bottom: -24px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .profile-account {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-account__navbar {
+        display: none;
+    }
+    .profile-navmobile {
+        display: block;
+    }
+    .profile-account__main {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .main-info {
+        flex-direction: column;
+    }
+
+    .main-info__additional {
+        height: 213px;
+        width: auto;
+    }
+
+    .field__input {
+        width: 100%;
+    }
+
+    .datebirth__birthday {
+        width: 48%;
+    }
+
+    .field__textarea {
+        width: 100%;
+    }
+
+    .profile-account__navbar {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-info__field-datebirth {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .datebirth__birthday {
+        width: auto;
+    }
+
+    .form-select {
+        width: auto !important;
+    }
+
+    .main-info__additional {
+       
+    }
+}

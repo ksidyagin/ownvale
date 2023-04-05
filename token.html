@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./header.css" />
+    <link rel="stylesheet" type="text/css" href="./token.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <div class="header-left__logo">
+                <img class="logo-img" src="./media/logo.svg" alt="">
+                <div class="logo-title">OwnVale</div>
+            </div>
+            <div class="header-left__search">
+                <form class="search">
+                    <img src="./media/search.svg" width="25" height="25">
+                    <input type="search" class="inputSearch" placeholder="Search" aria-label="Search">
+                </form>
+
+            </div>
+
+            <div class="header-left__link">Link 1</div>
+            <div class="header-left__link">Link 2</div>
+            <div class="header-left__link">Link 3</div>
+
+        </div>
+        <div class="header-right">
+            <!-- <div class="signup_btn">Sign Up</div>
+            <div class="login_btn">Login</div> -->
+            <div class="header-right__items">
+                <div class="header-right__item">
+                    <img src="./media/night_mode.svg" alt="">
+                </div>
+                <div class="header-right__item">
+                    <input id="translate_btn" type="checkbox" />
+                    <label for="translate_btn">
+                        <img src="./media/translate.svg" alt="">
+                    </label>
+                    <div class="translate_menu">
+                        <div class="translate_menu__language">
+                            Language 1
+                        </div>
+                        <div class="translate_menu__language">
+                            Language 2
+                        </div>
+                        <div class="translate_menu__language">
+                            Language 3
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right__item">
+                    <img class="header-right__item-divider" src="./media/header_divide_line.svg" alt="">
+                </div>
+                <div class="header-right__item">
+                    <img src="./media/notification.svg" alt="">
+                </div>
+            </div>
+
+            <div class="header-right__item-search">
+                <input id="searchbar-mobile" type="checkbox" />
+                <label for="searchbar-mobile">
+                    <img src="./media/search_mob.svg" alt="">
+                </label>
+                <div class="search-mobile">
+
+                    <form class="search-mobile__searchbar">
+                        <img id="searchbar-back" tabindex="0" src="./media/search_back.svg">
+                        <input type="search" class="search-mobile__placeholder" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <div class="search-mobile__borderline"></div>
+                    <div class="search-mobile__results">
+                        <div class="results__category">
+                            <img src="./media/popular-icon-big.svg" alt="">
+                            Popular
+                        </div>
+                        <div class="results__items">
+                            <div class="results__item">
+                                <div class="results__item-info">
+                                    <div class="results__item-info__logo">
+                                        <img src="./media/collection-avatar.svg" alt="">
+                                    </div>
+                                    <div class="results__item-info__description">
+                                        <div class="results__item-info__description__title">
+                                            <div class="results__item-info__description__title-name">DeGods</div>
+                                            <img src="./media/verification-badge.svg" alt="">
+                                        </div>
+                                        <div class="results__item-info__description__items">
+                                            <img src="./media/items_count.svg" alt=""> 1000 items
+                                        </div>
+                                        <div class="results__item__datetime">
+                                            Created in
+                                            <span style="color: #505050;">May 2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="results__item">
+                                <div class="results__item-info">
+                                    <div class="results__item-info__logo">
+                                        <img src="./media/collection-avatar.svg" alt="">
+                                    </div>
+                                    <div class="results__item-info__description">
+                                        <div class="results__item-info__description__title">
+                                            <div class="results__item-info__description__title-name">DeGods</div>
+                                            <img src="./media/verification-badge.svg" alt="">
+                                        </div>
+                                        <div class="results__item-info__description__items">
+                                            <img src="./media/items_count.svg" alt=""> 1000 items
+                                        </div>
+                                        <div class="results__item__datetime">
+                                            Created in
+                                            <span style="color: #505050;">May 2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="results__item">
+                                <div class="results__item-info">
+                                    <div class="results__item-info__logo">
+                                        <img src="./media/collection-avatar.svg" alt="">
+                                    </div>
+                                    <div class="results__item-info__description">
+                                        <div class="results__item-info__description__title">
+                                            <div class="results__item-info__description__title-name">DeGods</div>
+                                            <img src="./media/verification-badge.svg" alt="">
+                                        </div>
+                                        <div class="results__item-info__description__items">
+                                            <img src="./media/items_count.svg" alt=""> 1000 items
+                                        </div>
+                                        <div class="results__item__datetime">
+                                            Created in
+                                            <span style="color: #505050;">May 2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-right__item">
+                <input id="profile-page" type="checkbox" />
+                <label for="profile-page">
+                    <div class="user__img-mobile"></div>
+                </label>
+                <input id="profile-page-desktop" type="checkbox" />
+                <label for="profile-page-desktop">
+                    <div class="user__img"></div>
+                </label>
+                <div class="profile__page">
+                    <div class="profile__page-main">
+                        <div class="profile__avatar"></div>
+                        <div class="profile__name">Nayble</div>
+                    </div>
+                    <div class="profile__credentials">
+                        <div class="profile__credentials-id">
+                            <img class="profile__credentials-icon" src="./media/metamask-icon_1.svg" alt="">
+                            0х023230006...
+                        </div>
+                        <div class="profile__credentials-wallet">
+                            My wallet
+                        </div>
+                    </div>
+                    <div class="profile__page-borderline"></div>
+                    <div class="profile__page__options">
+                        <div class="profile__page__option">Profile</div>
+                        <div class="profile__page__option">Notification</div>
+                        <div class="profile__page__option">Watchlist</div>
+                        <div class="profile__page__option">Settings</div>
+                        <div class="profile__page__option">Log out</div>
+                    </div>
+                </div>
+                <div class="profile-nav">
+                    <div class="profile-nav__usercard">
+                        <div class="usercard">
+                            <div class="usercard__avatar"></div>
+                            <div class="usercard__description">
+                                <div class="usercard__description-nickname">
+                                    Nayble
+                                </div>
+                                <div class="usercard__description-id">
+                                    <img width="25" height="24" src="./media/metamask-icon.svg" alt="">
+                                    <div class="usercard__description-number">0х023230006...</div>
+                                </div>
+                                <div class="usercard__description-wallet">
+                                    My wallet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-nav__line"></div>
+                    <div class="profile-nav__options">
+                        <div class="profile-nav__option">
+                            Profile
+                        </div>
+                        <div class="profile-nav__option">
+                            Watchlist
+                        </div>
+                        <div class="profile-nav__option">
+                            Settings
+                        </div>
+                        <div class="profile-nav__option">
+                            Log out
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-right__item-burger">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class="menu-button__burger">
+                        <div class='menu-button'></div>
+                    </div>
+                </label>
+                <ul class="menu">
+                    <li class="menu-link">Link 1</li>
+                    <li class="menu-link">Link 2</li>
+                    <li class="menu-link">Link 3</li>
+                    <li class="menu-options">
+                        <div class="menu-options__buttons">
+                            <div class="menu-options__btn">
+                                <img src="./media/night_mode.svg" alt="">
+                            </div>
+                            <div class="menu-options__btn">
+                                <img src="./media/translate.svg" alt="">
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="token">
+        <div class="token-info__main-mobile">
+            <div class="token-statistics-mobile">
+                <div class="token-statistics__descr">
+                    <img src="./media/token/token-views.svg" alt="">
+                    <span>950</span>
+                </div>
+                <div class="token-statistics__descr">
+                    <img src="./media/token/token-favourites.svg" alt="">
+                    <span>34</span>
+                </div>
+            </div>
+            <div class="token-main__additional">
+                <div class="token-main__additional-btn">
+                    <img src="./media/token/token-star.svg" alt="">
+                </div>
+                <div class="token-main__additional-btn">
+                    <img src="./media/token/token-share.svg" alt="">
+                </div>
+                <div class="token-main__additional-btn">
+                    <img src="./media/token/token-flag.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="token-img">
+            <img src="./media/token/token-img.svg" alt="">
+        </div>
+        <div class="token-main__header-mobile">
+            <div class="token-id">
+                DeGods#2342
+            </div>
+            <div class="token-author">
+                <img width="30" height="30" class="token-author__logo" src="./media/token/token-author.svg" alt="">
+                <div class="token-author__name">DeGods <img src="./media/verification-badge.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="token-info">
+            <div class="token-info__main">
+                <div class="token-main__header">
+                    <div class="token-author">
+                        <img class="token-author__logo" src="./media/token/token-author.svg" alt="">
+                        <div class="token-author__name">DeGods</div>
+                    </div>
+                    <div class="token-id">
+                        DeGods#2342
+                    </div>
+                    <div class="token-statistics">
+                        <div class="token-statistics__descr">
+                            <img src="./media/token/token-views.svg" alt="">
+                            <span>950 views</span>
+                        </div>
+                        <div class="token-statistics__descr">
+                            <img src="./media/token/token-favourites.svg" alt="">
+                            <span>1 favorites</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="token-main__additional">
+                    <div class="token-main__additional-btn">
+                        <img src="./media/token/token-star.svg" alt="">
+                    </div>
+                    <div class="token-main__additional-btn">
+                        <img src="./media/token/token-share.svg" alt="">
+                    </div>
+                    <div class="token-main__additional-btn">
+                        <img src="./media/token/token-flag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="token-info__properties-title">
+                Properties
+            </div>
+            <div class="token-info__properties">
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5353C6;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #454554;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5B5BA7;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5353C6;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #454554;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5B5BA7;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5353C6;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #454554;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+                <div class="token-info__property">
+                    <div class="property-title">
+                        <div class="property-title__smalltitle">
+                            Background
+                        </div>
+                        <div class="property-title__bigtitle">
+                            Background
+                        </div>
+                    </div>
+                    <div style="color: #5B5BA7;" class="property-percent">
+                        12.5%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
