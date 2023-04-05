@@ -224,15 +224,15 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
         //Это вставить//
-        var lastY = 0.5;
-    document.addEventListener("touchmove", function (event) {
-        var lastS = document.documentElement.scrollTop;
-        if (lastS == 0 && (lastY - event.touches[0].clientY) < 0 && event.cancelable) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        lastY = event.touches[0].clientY;
-    }, { passive: false });
+    //     var lastY = 0.5;
+    // document.addEventListener("touchmove", function (event) {
+    //     var lastS = document.documentElement.scrollTop;
+    //     if (lastS == 0 && (lastY - event.touches[0].clientY) < 0 && event.cancelable) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
+    //     lastY = event.touches[0].clientY;
+    // }, { passive: false });
     //Это вставить//
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
