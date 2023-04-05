@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="./general.css" />
     <title>Hello, world!</title>
     <style>
-      body{
-        overscroll-behavior-y: contain;
-      }
     </style>
   </head>
 
@@ -633,6 +630,8 @@ class DraggingEvent {
       window.addEventListener("touchmove", handler)
       document.getElementsByTagName("html")[0].style.height = '95%';
       document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
+      document.getElementsByTagName("body")[0].style.height = '95%';
+      document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
       window.addEventListener("touchend", clearDraggingEvent)
       
       document.body.addEventListener("mouseleave", clearDraggingEvent)
@@ -640,9 +639,11 @@ class DraggingEvent {
       function clearDraggingEvent() {
         window.removeEventListener("touchmove", handler)
         window.removeEventListener("touchend", clearDraggingEvent)
+        handler(null)
         document.getElementsByTagName("html")[0].style.overflowY = 'auto';
         document.getElementsByTagName("html")[0].style.height = 'auto';
-        handler(null)
+        document.getElementsByTagName("body")[0].style.overflowY = 'auto';
+        document.getElementsByTagName("body")[0].style.height = 'auto';
       }
     })
   }
