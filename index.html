@@ -1,30 +1,37 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./main.css" />
-    <link rel="stylesheet" type="text/css" href="./header.css" />
-    <link rel="stylesheet" type="text/css" href="./general.css" />
-    <title>Hello, world!</title>
-    <style>
-    </style>
-  </head>
 
-  <body>
-    <div class="header">
-      <div class="header-left">
-          <div class="header-left__logo">
-              <img class="logo-img" src="./media/logo.svg" alt="">
-              <div class="logo-title">OwnVale</div>
-          </div>
-          <div class="header-left__search">
-              <!-- <div class="search-results">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./main.css" />
+  <link rel="stylesheet" type="text/css" href="./header.css" />
+  <link rel="stylesheet" type="text/css" href="./general.css" />
+  <title>Hello, world!</title>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-left">
+      <div class="header-left__logo">
+        <img class="logo-img" src="./media/logo.svg" alt="">
+        <div class="logo-title">OwnVale</div>
+      </div>
+      <div class="header-left__search">
+        <!-- <div class="search-results">
                   <div class="search-results__collections">
                       <div class="collections__title">
                           Collections
@@ -98,336 +105,336 @@
                   </div>
       
               </div> -->
-              <form class="search">
-                  <img src="./media/search.svg" width="25" height="25">
-                  <input type="search" class="inputSearch" placeholder="Search" aria-label="Search">
-              </form>
+        <form class="search">
+          <img src="./media/search.svg" width="25" height="25">
+          <input type="search" class="inputSearch" placeholder="Search" aria-label="Search">
+        </form>
 
-          </div>
-
-          <div class="header-left__link">Link 1</div>
-          <div class="header-left__link">Link 2</div>
-          <div class="header-left__link">Link 3</div>
-  
       </div>
-      <div class="header-right">
-          <!-- <div class="signup_btn">Sign Up</div>
+
+      <div class="header-left__link">Link 1</div>
+      <div class="header-left__link">Link 2</div>
+      <div class="header-left__link">Link 3</div>
+
+    </div>
+    <div class="header-right">
+      <!-- <div class="signup_btn">Sign Up</div>
           <div class="login_btn">Login</div> -->
-          <div class="header-right__items">
-              <div class="header-right__item">
-                  <img src="./media/night_mode.svg" alt="">
-              </div>
-              <div class="header-right__item">
-                  <input id="translate_btn" type="checkbox" />
-                  <label for="translate_btn">
-                      <img src="./media/translate.svg" alt="">
-                  </label>
-                  <div class="translate_menu">
-                      <div class="translate_menu__language">
-                          Language 1
-                      </div>
-                      <div class="translate_menu__language">
-                          Language 2
-                      </div>
-                      <div class="translate_menu__language">
-                          Language 3
-                      </div>
-                  </div>
-              </div>
-              <div class="header-right__item">
-                  <img class="header-right__item-divider" src="./media/header_divide_line.svg" alt="">
-              </div>
-              <div class="header-right__item">
-                  <img src="./media/notification.svg" alt="">
-              </div>
+      <div class="header-right__items">
+        <div class="header-right__item">
+          <img src="./media/night_mode.svg" alt="">
+        </div>
+        <div class="header-right__item">
+          <input id="translate_btn" type="checkbox" />
+          <label for="translate_btn">
+            <img src="./media/translate.svg" alt="">
+          </label>
+          <div class="translate_menu">
+            <div class="translate_menu__language">
+              Language 1
+            </div>
+            <div class="translate_menu__language">
+              Language 2
+            </div>
+            <div class="translate_menu__language">
+              Language 3
+            </div>
           </div>
-  
-          <div class="header-right__item-search">
-              <input id="searchbar-mobile" type="checkbox" />
-              <label for="searchbar-mobile">
-                  <img src="./media/search_mob.svg" alt="">
-              </label>
-              <div  class="search-mobile">
-          
-                  <form class="search-mobile__searchbar">
-                          <img id="searchbar-back" tabindex="0" src="./media/search_back.svg">
-                      <input type="search" class="search-mobile__placeholder" placeholder="Search" aria-label="Search">
-                  </form>
-                  <div class="search-mobile__borderline"></div>
-                  <div class="search-mobile__results">
-                      <div class="results__category">
-                          <img src="./media/popular-icon-big.svg" alt=""> 
-                          Popular
-                      </div>
-                      <div class="results__items">
-                          <div class="results__item">
-                              <div class="results__item-info">
-                                  <div class="results__item-info__logo">
-                                      <img src="./media/collection-avatar.svg" alt="">
-                                  </div>
-                                  <div class="results__item-info__description">
-                                      <div class="results__item-info__description__title">
-                                          <div class="results__item-info__description__title-name">DeGods</div>
-                                          <img src="./media/verification-badge.svg" alt="">
-                                      </div>
-                                      <div class="results__item-info__description__items">
-                                          <img src="./media/items_count.svg" alt=""> 1000 items
-                                      </div>
-                                      <div class="results__item__datetime">
-                                          Created in
-                                          <span style="color: #505050;">May 2020</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="results__item">
-                              <div class="results__item-info">
-                                  <div class="results__item-info__logo">
-                                      <img src="./media/collection-avatar.svg" alt="">
-                                  </div>
-                                  <div class="results__item-info__description">
-                                      <div class="results__item-info__description__title">
-                                          <div class="results__item-info__description__title-name">DeGods</div>
-                                          <img src="./media/verification-badge.svg" alt="">
-                                      </div>
-                                      <div class="results__item-info__description__items">
-                                          <img src="./media/items_count.svg" alt=""> 1000 items
-                                      </div>
-                                      <div class="results__item__datetime">
-                                          Created in
-                                          <span style="color: #505050;">May 2020</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="results__item">
-                              <div class="results__item-info">
-                                  <div class="results__item-info__logo">
-                                      <img src="./media/collection-avatar.svg" alt="">
-                                  </div>
-                                  <div class="results__item-info__description">
-                                      <div class="results__item-info__description__title">
-                                          <div class="results__item-info__description__title-name">DeGods</div>
-                                          <img src="./media/verification-badge.svg" alt="">
-                                      </div>
-                                      <div class="results__item-info__description__items">
-                                          <img src="./media/items_count.svg" alt=""> 1000 items
-                                      </div>
-                                      <div class="results__item__datetime">
-                                          Created in 
-                                          <span style="color: #505050;">May 2020</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-  
-                  </div>
-              </div>
-          </div>
-          <div class="header-right__item">
-              <input id="profile-page" type="checkbox" />
-              <label for="profile-page">
-                  <div class="user__img-mobile"></div>
-              </label>
-              <input id="profile-page-desktop" type="checkbox" />
-              <label for="profile-page-desktop">
-                  <div class="user__img"></div>
-              </label>
-              <div class="profile__page">
-                  <div class="profile__page-main">
-                      <div class="profile__avatar"></div>
-                      <div class="profile__name">Nayble</div>
-                  </div>
-                  <div class="profile__credentials">
-                      <div class="profile__credentials-id">
-                         <img class="profile__credentials-icon" src="./media/metamask-icon_1.svg" alt="">
-                         0х023230006...
-                      </div>
-                      <div class="profile__credentials-wallet">
-                          My wallet
-                      </div>
-                  </div>
-                  <div class="profile__page-borderline"></div>
-                  <div class="profile__page__options">
-                      <div class="profile__page__option">Profile</div>
-                      <div class="profile__page__option">Notification</div>
-                      <div class="profile__page__option">Watchlist</div>
-                      <div class="profile__page__option">Settings</div>
-                      <div class="profile__page__option">Log out</div>
-                  </div>
-              </div>
-              <div class="profile-nav">
-                  <div class="profile-nav__usercard">
-                      <div class="usercard">
-                          <div class="usercard__avatar"></div>
-                          <div class="usercard__description">
-                              <div class="usercard__description-nickname">
-                                  Nayble
-                              </div>
-                              <div class="usercard__description-id">
-                                  <img width="25" height="24" src="./media/metamask-icon.svg" alt="">
-                                  <div class="usercard__description-number">0х023230006...</div>
-                              </div>
-                              <div class="usercard__description-wallet">
-                                  My wallet
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="profile-nav__line"></div>
-                  <div class="profile-nav__options">
-                      <div class="profile-nav__option">
-                          Profile
-                      </div>
-                      <div class="profile-nav__option">
-                          Watchlist
-                      </div>
-                      <div class="profile-nav__option">
-                          Settings
-                      </div>
-                      <div class="profile-nav__option">
-                          Log out
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="header-right__item-burger">
-              <input id="menu-toggle" type="checkbox" onChange="checked_headermobile(this)"/>
-              <label id="hamburger-menu" class='menu-button-container' for="menu-toggle">
-                  <div class="menu-button__burger">
-                      <div class='menu-button'></div>
-                  </div>
-                  <nav id="sidebar-menu">
-                      <ul>
-                        <li>Link 1</li>
-                        <li><a href="#">Link 2</a></li>
-                        <li>Link 3</li>
-                        <li class="menu-options">
-                          <div class="menu-options__buttons">
-                              <div class="menu-options__btn">
-                                  <img src="./media/night_mode.svg" alt="">
-                              </div>
-                              <div class="menu-options__btn">
-                                  <img src="./media/translate.svg" alt="">
-                              </div>
-                          </div>
-                          
-                      </li>
-                      </ul>
-                    </nav>
-              </label>
-              
-          </div>
-  
+        </div>
+        <div class="header-right__item">
+          <img class="header-right__item-divider" src="./media/header_divide_line.svg" alt="">
+        </div>
+        <div class="header-right__item">
+          <img src="./media/notification.svg" alt="">
+        </div>
       </div>
-  </div>
-    <div class="carousel-swiper">
-      <section>
-          <div class="slider">
-              <div class="card" id="1">
-                  <div class="card-body">
-                      <div class="article-card">
-                          <div class="card-content">
-                              <div class="card-content__title">
-                                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-                                  <span class="card-content__name">DeGods</span>
-                              </div>
-                              <span class="card-content__smr">SMR 1.1</span>
-                          </div>
-                          <img class="img" src="./media/1.png" alt="article-cover" />
-                      </div>
-                      <div class="card-options">
-                          <a href="#" class="btn btn-primary">Confirmation</a>
-                          <a href="#" class="btn btn-primary">Community</a>
-                          <a href="#" class="btn btn-primary">PFP</a>
-                      </div>
+
+      <div class="header-right__item-search">
+        <input id="searchbar-mobile" type="checkbox" />
+        <label for="searchbar-mobile">
+          <img src="./media/search_mob.svg" alt="">
+        </label>
+        <div class="search-mobile">
+
+          <form class="search-mobile__searchbar">
+            <img id="searchbar-back" tabindex="0" src="./media/search_back.svg">
+            <input type="search" class="search-mobile__placeholder" placeholder="Search" aria-label="Search">
+          </form>
+          <div class="search-mobile__borderline"></div>
+          <div class="search-mobile__results">
+            <div class="results__category">
+              <img src="./media/popular-icon-big.svg" alt="">
+              Popular
+            </div>
+            <div class="results__items">
+              <div class="results__item">
+                <div class="results__item-info">
+                  <div class="results__item-info__logo">
+                    <img src="./media/collection-avatar.svg" alt="">
                   </div>
-              </div>
-              <div class="card" id="2">
-                  <div class="card-body">
-                      <div class="article-card">
-                          <div class="card-content">
-                              <div class="card-content__title">
-                                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-                                  <span class="card-content__name">DeGods</span>
-                              </div>
-                              <span class="card-content__smr">SMR 1.2</span>
-                          </div>
-                          <img class="img" src="./media/2.png" alt="article-cover" />
-                      </div>
-                      <div class="card-options">
-                          <a href="#" class="btn btn-primary">Confirmation</a>
-                          <a href="#" class="btn btn-primary">Community</a>
-                          <a href="#" class="btn btn-primary">PFP</a>
-                      </div>
+                  <div class="results__item-info__description">
+                    <div class="results__item-info__description__title">
+                      <div class="results__item-info__description__title-name">DeGods</div>
+                      <img src="./media/verification-badge.svg" alt="">
+                    </div>
+                    <div class="results__item-info__description__items">
+                      <img src="./media/items_count.svg" alt=""> 1000 items
+                    </div>
+                    <div class="results__item__datetime">
+                      Created in
+                      <span style="color: #505050;">May 2020</span>
+                    </div>
                   </div>
+                </div>
               </div>
-              <div class="card" id="3">
-                  <div class="card-body">
-                      <div class="article-card">
-                          <div class="card-content">
-                              <div class="card-content__title">
-                                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-                                  <span class="card-content__name">DeGods</span>
-                              </div>
-                              <span class="card-content__smr">SMR 1.3</span>
-                          </div>
-                          <img class="img" src="./media/3.png" alt="article-cover" />
-                      </div>
-                      <div class="card-options">
-                          <a href="#" class="btn btn-primary">Confirmation</a>
-                          <a href="#" class="btn btn-primary">Community</a>
-                          <a href="#" class="btn btn-primary">PFP</a>
-                      </div>
+              <div class="results__item">
+                <div class="results__item-info">
+                  <div class="results__item-info__logo">
+                    <img src="./media/collection-avatar.svg" alt="">
                   </div>
-              </div>
-              <div class="card" id="4">
-                  <div class="card-body">
-                      <div class="article-card">
-                          <div class="card-content">
-                              <div class="card-content__title">
-                                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-                                  <span class="card-content__name">DeGods</span>
-                              </div>
-                              <span class="card-content__smr">SMR 1.4</span>
-                          </div>
-                          <img class="img" src="./media/1.png" alt="article-cover" />
-                      </div>
-                      <div class="card-options">
-                          <a href="#" class="btn btn-primary">Confirmation</a>
-                          <a href="#" class="btn btn-primary">Community</a>
-                          <a href="#" class="btn btn-primary">PFP</a>
-                      </div>
+                  <div class="results__item-info__description">
+                    <div class="results__item-info__description__title">
+                      <div class="results__item-info__description__title-name">DeGods</div>
+                      <img src="./media/verification-badge.svg" alt="">
+                    </div>
+                    <div class="results__item-info__description__items">
+                      <img src="./media/items_count.svg" alt=""> 1000 items
+                    </div>
+                    <div class="results__item__datetime">
+                      Created in
+                      <span style="color: #505050;">May 2020</span>
+                    </div>
                   </div>
+                </div>
               </div>
-              <div class="card" id="5">
-                  <div class="card-body">
-                      <div class="article-card">
-                          <div class="card-content">
-                              <div class="card-content__title">
-                                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-                                  <span class="card-content__name">DeGods</span>
-                              </div>
-                              <span class="card-content__smr">SMR 1.5</span>
-                          </div>
-                          <img class="img" src="./media/2.png" alt="article-cover" />
-                      </div>
-                      <div class="card-options">
-                          <a href="#" class="btn btn-primary">Confirmation</a>
-                          <a href="#" class="btn btn-primary">Community</a>
-                          <a href="#" class="btn btn-primary">PFP</a>
-                      </div>
+              <div class="results__item">
+                <div class="results__item-info">
+                  <div class="results__item-info__logo">
+                    <img src="./media/collection-avatar.svg" alt="">
                   </div>
+                  <div class="results__item-info__description">
+                    <div class="results__item-info__description__title">
+                      <div class="results__item-info__description__title-name">DeGods</div>
+                      <img src="./media/verification-badge.svg" alt="">
+                    </div>
+                    <div class="results__item-info__description__items">
+                      <img src="./media/items_count.svg" alt=""> 1000 items
+                    </div>
+                    <div class="results__item__datetime">
+                      Created in
+                      <span style="color: #505050;">May 2020</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+
           </div>
-      </section>
+        </div>
+      </div>
+      <div class="header-right__item">
+        <input id="profile-page" type="checkbox" />
+        <label for="profile-page">
+          <div class="user__img-mobile"></div>
+        </label>
+        <input id="profile-page-desktop" type="checkbox" />
+        <label for="profile-page-desktop">
+          <div class="user__img"></div>
+        </label>
+        <div class="profile__page">
+          <div class="profile__page-main">
+            <div class="profile__avatar"></div>
+            <div class="profile__name">Nayble</div>
+          </div>
+          <div class="profile__credentials">
+            <div class="profile__credentials-id">
+              <img class="profile__credentials-icon" src="./media/metamask-icon_1.svg" alt="">
+              0х023230006...
+            </div>
+            <div class="profile__credentials-wallet">
+              My wallet
+            </div>
+          </div>
+          <div class="profile__page-borderline"></div>
+          <div class="profile__page__options">
+            <div class="profile__page__option">Profile</div>
+            <div class="profile__page__option">Notification</div>
+            <div class="profile__page__option">Watchlist</div>
+            <div class="profile__page__option">Settings</div>
+            <div class="profile__page__option">Log out</div>
+          </div>
+        </div>
+        <div class="profile-nav">
+          <div class="profile-nav__usercard">
+            <div class="usercard">
+              <div class="usercard__avatar"></div>
+              <div class="usercard__description">
+                <div class="usercard__description-nickname">
+                  Nayble
+                </div>
+                <div class="usercard__description-id">
+                  <img width="25" height="24" src="./media/metamask-icon.svg" alt="">
+                  <div class="usercard__description-number">0х023230006...</div>
+                </div>
+                <div class="usercard__description-wallet">
+                  My wallet
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-nav__line"></div>
+          <div class="profile-nav__options">
+            <div class="profile-nav__option">
+              Profile
+            </div>
+            <div class="profile-nav__option">
+              Watchlist
+            </div>
+            <div class="profile-nav__option">
+              Settings
+            </div>
+            <div class="profile-nav__option">
+              Log out
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right__item-burger">
+        <input id="menu-toggle" type="checkbox" onChange="checked_headermobile(this)" />
+        <label id="hamburger-menu" class='menu-button-container' for="menu-toggle">
+          <div class="menu-button__burger">
+            <div class='menu-button'></div>
+          </div>
+          <nav id="sidebar-menu">
+            <ul>
+              <li>Link 1</li>
+              <li><a href="#">Link 2</a></li>
+              <li>Link 3</li>
+              <li class="menu-options">
+                <div class="menu-options__buttons">
+                  <div class="menu-options__btn">
+                    <img src="./media/night_mode.svg" alt="">
+                  </div>
+                  <div class="menu-options__btn">
+                    <img src="./media/translate.svg" alt="">
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </nav>
+        </label>
+
+      </div>
+
+    </div>
   </div>
-  
-<div class="container-mobile">
-  <div class="card-carousel">
-    <div class="card" id="1">
+  <div class="carousel-swiper">
+    <section>
+      <div class="slider">
+        <div class="card" id="1">
+          <div class="card-body">
+            <div class="article-card">
+              <div class="card-content">
+                <div class="card-content__title">
+                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                  <span class="card-content__name">DeGods</span>
+                </div>
+                <span class="card-content__smr">SMR 1.1</span>
+              </div>
+              <img class="img" src="./media/1.png" alt="article-cover" />
+            </div>
+            <div class="card-options">
+              <a href="#" class="btn btn-primary">Confirmation</a>
+              <a href="#" class="btn btn-primary">Community</a>
+              <a href="#" class="btn btn-primary">PFP</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="2">
+          <div class="card-body">
+            <div class="article-card">
+              <div class="card-content">
+                <div class="card-content__title">
+                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                  <span class="card-content__name">DeGods</span>
+                </div>
+                <span class="card-content__smr">SMR 1.2</span>
+              </div>
+              <img class="img" src="./media/2.png" alt="article-cover" />
+            </div>
+            <div class="card-options">
+              <a href="#" class="btn btn-primary">Confirmation</a>
+              <a href="#" class="btn btn-primary">Community</a>
+              <a href="#" class="btn btn-primary">PFP</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="3">
+          <div class="card-body">
+            <div class="article-card">
+              <div class="card-content">
+                <div class="card-content__title">
+                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                  <span class="card-content__name">DeGods</span>
+                </div>
+                <span class="card-content__smr">SMR 1.3</span>
+              </div>
+              <img class="img" src="./media/3.png" alt="article-cover" />
+            </div>
+            <div class="card-options">
+              <a href="#" class="btn btn-primary">Confirmation</a>
+              <a href="#" class="btn btn-primary">Community</a>
+              <a href="#" class="btn btn-primary">PFP</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="4">
+          <div class="card-body">
+            <div class="article-card">
+              <div class="card-content">
+                <div class="card-content__title">
+                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                  <span class="card-content__name">DeGods</span>
+                </div>
+                <span class="card-content__smr">SMR 1.4</span>
+              </div>
+              <img class="img" src="./media/1.png" alt="article-cover" />
+            </div>
+            <div class="card-options">
+              <a href="#" class="btn btn-primary">Confirmation</a>
+              <a href="#" class="btn btn-primary">Community</a>
+              <a href="#" class="btn btn-primary">PFP</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="5">
+          <div class="card-body">
+            <div class="article-card">
+              <div class="card-content">
+                <div class="card-content__title">
+                  <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                  <span class="card-content__name">DeGods</span>
+                </div>
+                <span class="card-content__smr">SMR 1.5</span>
+              </div>
+              <img class="img" src="./media/2.png" alt="article-cover" />
+            </div>
+            <div class="card-options">
+              <a href="#" class="btn btn-primary">Confirmation</a>
+              <a href="#" class="btn btn-primary">Community</a>
+              <a href="#" class="btn btn-primary">PFP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-mobile">
+    <div class="card-carousel">
+      <div class="card" id="1">
         <div class="card-body">
           <div class="article-card">
             <div class="card-content">
@@ -445,308 +452,308 @@
             <a href="#" class="btn btn-primary">PFP</a>
           </div>
         </div>
-    </div>
-    <div class="card" id="2">
-      <div class="card-body">
-        <div class="article-card">
-          <div class="card-content">
-            <div class="card-content__title">
-              <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-              <span class="card-content__name">DeGods</span>
+      </div>
+      <div class="card" id="2">
+        <div class="card-body">
+          <div class="article-card">
+            <div class="card-content">
+              <div class="card-content__title">
+                <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                <span class="card-content__name">DeGods</span>
+              </div>
+              <span class="card-content__smr">SMR 1.2</span>
             </div>
-            <span class="card-content__smr">SMR 1.2</span>
+            <img class="img" src="./media/2.png" alt="article-cover" />
           </div>
-          <img class="img" src="./media/2.png" alt="article-cover" />
-        </div>
-        <div class="card-options">
-          <a href="#" class="btn btn-primary">Confirmation</a>
-          <a href="#" class="btn btn-primary">Community</a>
-          <a href="#" class="btn btn-primary">PFP</a>
+          <div class="card-options">
+            <a href="#" class="btn btn-primary">Confirmation</a>
+            <a href="#" class="btn btn-primary">Community</a>
+            <a href="#" class="btn btn-primary">PFP</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card" id="3">
-      <div class="card-body">
-        <div class="article-card">
-          <div class="card-content">
-            <div class="card-content__title">
-              <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-              <span class="card-content__name">DeGods</span>
+      <div class="card" id="3">
+        <div class="card-body">
+          <div class="article-card">
+            <div class="card-content">
+              <div class="card-content__title">
+                <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                <span class="card-content__name">DeGods</span>
+              </div>
+              <span class="card-content__smr">SMR 1.3</span>
             </div>
-            <span class="card-content__smr">SMR 1.3</span>
+            <img class="img" src="./media/3.png" alt="article-cover" />
           </div>
-          <img class="img" src="./media/3.png" alt="article-cover" />
-        </div>
-        <div class="card-options">
-          <a href="#" class="btn btn-primary">Confirmation</a>
-          <a href="#" class="btn btn-primary">Community</a>
-          <a href="#" class="btn btn-primary">PFP</a>
+          <div class="card-options">
+            <a href="#" class="btn btn-primary">Confirmation</a>
+            <a href="#" class="btn btn-primary">Community</a>
+            <a href="#" class="btn btn-primary">PFP</a>
+          </div>
         </div>
       </div>
-    </div>  
-    <div class="card" id="4">
-      <div class="card-body">
-        <div class="article-card">
-          <div class="card-content">
-            <div class="card-content__title">
-              <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-              <span class="card-content__name">DeGods</span>
+      <div class="card" id="4">
+        <div class="card-body">
+          <div class="article-card">
+            <div class="card-content">
+              <div class="card-content__title">
+                <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                <span class="card-content__name">DeGods</span>
+              </div>
+              <span class="card-content__smr">SMR 1.4</span>
             </div>
-            <span class="card-content__smr">SMR 1.4</span>
+            <img class="img" src="./media/1.png" alt="article-cover" />
           </div>
-          <img class="img" src="./media/1.png" alt="article-cover" />
-        </div>
-        <div class="card-options">
-          <a href="#" class="btn btn-primary">Confirmation</a>
-          <a href="#" class="btn btn-primary">Community</a>
-          <a href="#" class="btn btn-primary">PFP</a>
+          <div class="card-options">
+            <a href="#" class="btn btn-primary">Confirmation</a>
+            <a href="#" class="btn btn-primary">Community</a>
+            <a href="#" class="btn btn-primary">PFP</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card" id="5">
-      <div class="card-body">
-        <div class="article-card">
-          <div class="card-content">
-            <div class="card-content__title">
-              <img class="card-content__logo" src="./media/pngwing.svg" alt="">
-              <span class="card-content__name">DeGods</span>
+      <div class="card" id="5">
+        <div class="card-body">
+          <div class="article-card">
+            <div class="card-content">
+              <div class="card-content__title">
+                <img class="card-content__logo" src="./media/pngwing.svg" alt="">
+                <span class="card-content__name">DeGods</span>
+              </div>
+              <span class="card-content__smr">SMR 1.5</span>
             </div>
-            <span class="card-content__smr">SMR 1.5</span>
+            <img class="img" src="./media/2.png" alt="article-cover" />
           </div>
-          <img class="img" src="./media/2.png" alt="article-cover" />
-        </div>
-        <div class="card-options">
-          <a href="#" class="btn btn-primary">Confirmation</a>
-          <a href="#" class="btn btn-primary">Community</a>
-          <a href="#" class="btn btn-primary">PFP</a>
+          <div class="card-options">
+            <a href="#" class="btn btn-primary">Confirmation</a>
+            <a href="#" class="btn btn-primary">Community</a>
+            <a href="#" class="btn btn-primary">PFP</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<br>
-<br>
-1
-<br>
-<br>
-1
-1
-1
-<br>
-11
-<br>
-1
-<br>
-<br>
-1
-<br>
-<br>
-1
-<br>
-<br>
-1
-1
-1
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-        //Это вставить//
-    //     var lastY = 0.5;
-    // document.addEventListener("touchmove", function (event) {
-    //     var lastS = document.documentElement.scrollTop;
-    //     if (lastS == 0 && (lastY - event.touches[0].clientY) < 0 && event.cancelable) {
-    //         event.preventDefault();
-    //         event.stopPropagation();
-    //     }
-    //     lastY = event.touches[0].clientY;
-    // }, { passive: false });
-    //Это вставить//
-const cardsContainer = document.querySelector(".card-carousel");
-const cardsController = document.querySelector(".card-carousel + .card-controller")
+  <br>
+  <br>
+  1
+  <br>
+  <br>
+  1
+  1
+  1
+  <br>
+  11
+  <br>
+  1
+  <br>
+  <br>
+  1
+  <br>
+  <br>
+  1
+  <br>
+  <br>
+  1
+  1
+  1
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  //Это вставить//
+  //     var lastY = 0.5;
+  // document.addEventListener("touchmove", function (event) {
+  //     var lastS = document.documentElement.scrollTop;
+  //     if (lastS == 0 && (lastY - event.touches[0].clientY) < 0 && event.cancelable) {
+  //         event.preventDefault();
+  //         event.stopPropagation();
+  //     }
+  //     lastY = event.touches[0].clientY;
+  // }, { passive: false });
+  //Это вставить//
+  const cardsContainer = document.querySelector(".card-carousel");
+  const cardsController = document.querySelector(".card-carousel + .card-controller")
 
-class DraggingEvent {
-  constructor(target = undefined) {
-    this.target = target;
-  }
-  
-  event(callback) {
-    let handler;
-    
-    this.target.addEventListener("mousedown", e => {
-      e.preventDefault()
-      
-      handler = callback(e)
-      
-      // window.addEventListener("mousemove", handler)
-      
-      document.addEventListener("mouseleave", clearDraggingEvent)
-      
-      window.addEventListener("mouseup", clearDraggingEvent)
-      
-      function clearDraggingEvent() {
-        // window.removeEventListener("mousemove", handler)
-        window.removeEventListener("mouseup", clearDraggingEvent)
-      
-        document.removeEventListener("mouseleave", clearDraggingEvent)
-        
-        handler(null)
-      }
-    })
-    
-    this.target.addEventListener("touchstart", e => {
-      handler = callback(e)
-      
-      window.addEventListener("touchmove", handler)
-      document.getElementsByTagName("html")[0].style.height = '95%';
-      document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
-      document.getElementsByTagName("body")[0].style.height = '95%';
-      document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
-      window.addEventListener("touchend", clearDraggingEvent)
-      
-      document.body.addEventListener("mouseleave", clearDraggingEvent)
-      
-      function clearDraggingEvent() {
-        window.removeEventListener("touchmove", handler)
-        window.removeEventListener("touchend", clearDraggingEvent)
-        handler(null)
-        document.getElementsByTagName("html")[0].style.overflowY = 'auto';
-        document.getElementsByTagName("html")[0].style.height = 'auto';
-        document.getElementsByTagName("body")[0].style.overflowY = 'auto';
-        document.getElementsByTagName("body")[0].style.height = 'auto';
-      }
-    })
-  }
-  
-  // Get the distance that the user has dragged
-  getDistance(callback) {
-    function distanceInit(e1) {
-      let startingX, startingY;
-      
-      if ("touches" in e1) {
-        startingX = e1.touches[0].clientX
-        startingY = e1.touches[0].clientY
-      } else {
-        startingX = e1.clientX
-        startingY = e1.clientY
-      }
-      
+  class DraggingEvent {
+    constructor(target = undefined) {
+      this.target = target;
+    }
 
-      return function(e2) {
-        if (e2 === null) {
-          return callback(null)
+    event(callback) {
+      let handler;
+
+      this.target.addEventListener("mousedown", e => {
+        e.preventDefault()
+
+        handler = callback(e)
+
+        // window.addEventListener("mousemove", handler)
+
+        document.addEventListener("mouseleave", clearDraggingEvent)
+
+        window.addEventListener("mouseup", clearDraggingEvent)
+
+        function clearDraggingEvent() {
+          // window.removeEventListener("mousemove", handler)
+          window.removeEventListener("mouseup", clearDraggingEvent)
+
+          document.removeEventListener("mouseleave", clearDraggingEvent)
+
+          handler(null)
+        }
+      })
+
+      this.target.addEventListener("touchstart", e => {
+        handler = callback(e)
+
+        window.addEventListener("touchmove", handler)
+        // document.getElementsByTagName("html")[0].style.height = '95%';
+        // document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
+        // document.getElementsByTagName("body")[0].style.height = '95%';
+        // document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
+        window.addEventListener("touchend", clearDraggingEvent)
+
+        document.body.addEventListener("mouseleave", clearDraggingEvent)
+
+        function clearDraggingEvent() {
+          window.removeEventListener("touchmove", handler)
+          window.removeEventListener("touchend", clearDraggingEvent)
+          handler(null)
+          // document.getElementsByTagName("html")[0].style.overflowY = 'auto';
+          // document.getElementsByTagName("html")[0].style.height = 'auto';
+          // document.getElementsByTagName("body")[0].style.overflowY = 'auto';
+          // document.getElementsByTagName("body")[0].style.height = 'auto';
+        }
+      })
+    }
+
+    // Get the distance that the user has dragged
+    getDistance(callback) {
+      function distanceInit(e1) {
+        let startingX, startingY;
+
+        if ("touches" in e1) {
+          startingX = e1.touches[0].clientX
+          startingY = e1.touches[0].clientY
         } else {
-          
-          if ("touches" in e2) {
-            return callback({
-              x: e2.touches[0].clientX - startingX,
-              y: e2.touches[0].clientY - startingY
-            })
+          startingX = e1.clientX
+          startingY = e1.clientY
+        }
+
+
+        return function (e2) {
+          if (e2 === null) {
+            return callback(null)
           } else {
-            return callback({
-              x: e2.clientX - startingX,
-              y: e2.clientY - startingY
-            })
+
+            if ("touches" in e2) {
+              return callback({
+                x: e2.touches[0].clientX - startingX,
+                y: e2.touches[0].clientY - startingY
+              })
+            } else {
+              return callback({
+                x: e2.clientX - startingX,
+                y: e2.clientY - startingY
+              })
+            }
           }
         }
       }
-    }
-    
-    this.event(distanceInit)
-  }
-}
 
-
-class CardCarousel extends DraggingEvent {
-  constructor(container, controller = undefined) {
-    super(container)
-    
-    // DOM elements
-    this.container = container
-    this.controllerElement = controller
-    this.cards = container.querySelectorAll(".card")
-    
-    // Carousel data
-    this.centerIndex = (this.cards.length - 1) / 2;
-    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
-    this.xScale = {};
-    
-    // Resizing
-    window.addEventListener("resize", this.updateCardWidth.bind(this))
-    
-    if (this.controllerElement) {
-      this.controllerElement.addEventListener("keydown", this.controller.bind(this))      
-    }
-
-    
-    // Initializers
-    this.build()
-    
-    // Bind dragging event
-    super.getDistance(this.moveCards.bind(this))
-  }
-  
-  updateCardWidth() {
-    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
-    
-    this.build()
-  }
-  
-  build(fix = 0) {
-    for (let i = 0; i < this.cards.length; i++) {
-      const x = i - this.centerIndex;
-      const scale = this.calcScale(x)
-      const scale2 = this.calcScale2(x)
-      const zIndex = -(Math.abs(i - this.centerIndex))
-      
-      const leftPos = this.calcPos(x, scale2)
-     
-      
-      this.xScale[x] = this.cards[i]
-      
-      this.updateCards(this.cards[i], {
-        x: x,
-        scale: scale,
-        leftPos: leftPos,
-        zIndex: zIndex
-      })
+      this.event(distanceInit)
     }
   }
-  
-  
-  controller(e) {
-    const temp = {...this.xScale};
-      
+
+
+  class CardCarousel extends DraggingEvent {
+    constructor(container, controller = undefined) {
+      super(container)
+
+      // DOM elements
+      this.container = container
+      this.controllerElement = controller
+      this.cards = container.querySelectorAll(".card")
+
+      // Carousel data
+      this.centerIndex = (this.cards.length - 1) / 2;
+      this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+      this.xScale = {};
+
+      // Resizing
+      window.addEventListener("resize", this.updateCardWidth.bind(this))
+
+      if (this.controllerElement) {
+        this.controllerElement.addEventListener("keydown", this.controller.bind(this))
+      }
+
+
+      // Initializers
+      this.build()
+
+      // Bind dragging event
+      super.getDistance(this.moveCards.bind(this))
+    }
+
+    updateCardWidth() {
+      this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+
+      this.build()
+    }
+
+    build(fix = 0) {
+      for (let i = 0; i < this.cards.length; i++) {
+        const x = i - this.centerIndex;
+        const scale = this.calcScale(x)
+        const scale2 = this.calcScale2(x)
+        const zIndex = -(Math.abs(i - this.centerIndex))
+
+        const leftPos = this.calcPos(x, scale2)
+
+
+        this.xScale[x] = this.cards[i]
+
+        this.updateCards(this.cards[i], {
+          x: x,
+          scale: scale,
+          leftPos: leftPos,
+          zIndex: zIndex
+        })
+      }
+    }
+
+
+    controller(e) {
+      const temp = { ...this.xScale };
+
       if (e.keyCode === 39) {
         // Left arrow
         for (let x in this.xScale) {
@@ -755,7 +762,7 @@ class CardCarousel extends DraggingEvent {
           temp[newX] = this.xScale[x]
         }
       }
-      
+
       if (e.keyCode == 37) {
         // Right arrow
         for (let x in this.xScale) {
@@ -764,14 +771,14 @@ class CardCarousel extends DraggingEvent {
           temp[newX] = this.xScale[x]
         }
       }
-      
+
       this.xScale = temp;
-      
+
       for (let x in temp) {
         const scale = this.calcScale(x),
-              scale2 = this.calcScale2(x),
-              leftPos = this.calcPos(x, scale2),
-              zIndex = -Math.abs(x)
+          scale2 = this.calcScale2(x),
+          leftPos = this.calcPos(x, scale2),
+          zIndex = -Math.abs(x)
 
         this.updateCards(this.xScale[x], {
           x: x,
@@ -780,222 +787,223 @@ class CardCarousel extends DraggingEvent {
           zIndex: zIndex
         })
       }
-  }
-  
-  calcPos(x, scale) {
-    let formula;
-    
-    if (x < 0) {
-      formula = (scale * 100 - this.cardWidth) / 2
-      return formula
-
-    } else if (x > 0) {
-      formula = 100 - (scale * 100 + this.cardWidth) / 2
-      return formula
-    } else {
-      formula = 100 - (scale * 100 + this.cardWidth) / 2
-      return formula
     }
-  }
-  
-  updateCards(card, data) {
-    if (data.x || data.x == 0) {
-      card.setAttribute("data-x", data.x)
-    }
-    
-    if (data.scale || data.scale == 0) {
-      card.style.transform = `scale(${data.scale})`
 
-      if (data.scale == 0) {
-        card.style.opacity = data.scale
-      }
+    calcPos(x, scale) {
+      let formula;
 
-      else {
-        card.style.opacity = 1;
+      if (x < 0) {
+        formula = (scale * 100 - this.cardWidth) / 2
+        return formula
+
+      } else if (x > 0) {
+        formula = 100 - (scale * 100 + this.cardWidth) / 2
+        return formula
+      } else {
+        formula = 100 - (scale * 100 + this.cardWidth) / 2
+        return formula
       }
     }
-   
-    if (data.leftPos) {
-      card.style.left = `${data.leftPos}%`        
-    }
-    if (data.opacity) {
-      card.style.opacity = data.opacity;        
-    }
-    if (data.x == 1) {
-      card.style.left = `65%`;
-      card.style.opacity = 0.5;
-    }
-    if (data.x == -1) {
-      card.style.left = `-9%`;
-      card.style.opacity = 0.5;
-    }
-    if (data.zIndex || data.zIndex == 0) {
-      if (data.zIndex == 0) {
-        card.classList.add("highlight")
+
+    updateCards(card, data) {
+      if (data.x || data.x == 0) {
+        card.setAttribute("data-x", data.x)
       }
 
-       else {
-        card.classList.remove("highlight")
-      }
-      
-      card.style.zIndex = data.zIndex  
-      
-    }
+      if (data.scale || data.scale == 0) {
+        card.style.transform = `scale(${data.scale})`
 
-  }
-  
-  calcScale2(x) {
-    let formula;
-   
-    if (x <= 0) {
-      formula = 1 - -1 / 5 * x
-      
-      return formula
-    } else if (x > 0) {
-      formula = 1 - 1 / 5 * x
-      
-      return formula
-    }
-  }
-  
-  calcScale(x) {
-    const formula = 1 - 1 / 5 * Math.pow(x, 2)
-    
-    if (formula <= 0) {
-      return 0 
-    } else {
-      return formula      
-    }
-  }
-  
-  checkOrdering(card, x, xDist) {    
-    const original = parseInt(card.dataset.x)
-    const rounded = Math.round(xDist)
-    let newX = x
-    
-    if (x !== x + rounded) {
-      if (x + rounded > original) {
-        if (x + rounded > this.centerIndex) {
-          
-          newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+        if (data.scale == 0) {
+          card.style.opacity = data.scale
         }
-      } else if (x + rounded < original) {
-        if (x + rounded < -this.centerIndex) {
-          
-          newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
+
+        else {
+          card.style.opacity = 1;
         }
       }
-      
-      this.xScale[newX + rounded] = card;
-    }
-    
-    const temp = -Math.abs(newX + rounded)
-    
-    this.updateCards(card, {zIndex: temp})
 
-    return newX;
-  }
-  
-  moveCards(data) {
-
-    let xDist;
-    
-    if (data != null) {
-      this.container.classList.remove("smooth-return")
-      xDist = data.x / 250;
-    } else {
-
-      
-      this.container.classList.add("smooth-return")
-      xDist = 0;
-
-      for (let x in this.xScale) {
-        this.updateCards(this.xScale[x], {
-          x: x,
-          zIndex: Math.abs(Math.abs(x) - this.centerIndex)
-        })
+      if (data.leftPos) {
+        card.style.left = `${data.leftPos}%`
       }
-    }
+      if (data.opacity) {
+        card.style.opacity = data.opacity;
+      }
+      if (data.x == 1) {
+        card.style.left = `65%`;
+        card.style.opacity = 0.5;
+      }
+      if (data.x == -1) {
+        card.style.left = `-9%`;
+        card.style.opacity = 0.5;
+      }
+      if (data.zIndex || data.zIndex == 0) {
+        if (data.zIndex == 0) {
+          card.classList.add("highlight")
+        }
 
-    for (let i = 0; i < this.cards.length; i++) {
-      const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
-            scale = this.calcScale(x + xDist),
-            scale2 = this.calcScale2(x + xDist),
-            leftPos = this.calcPos(x + xDist, scale2)
-      
-      if(x == 1){
-        this.cards[i].style.opacity = 0.5;
-        this.updateCards(this.cards[i], {
-          scale: scale,
-          leftPos: 65,
-          opacity: 0.5
-        })
-        continue;
+        else {
+          card.classList.remove("highlight")
+        }
+
+        card.style.zIndex = data.zIndex
+
       }
-      if(x == -1){
-        this.cards[i].style.opacity = 0.5;
-        this.updateCards(this.cards[i], {
-          scale: scale,
-          leftPos: -9,
-          opacity: 0.5
-        })
-        continue;
-      }
-      this.updateCards(this.cards[i], {
-        scale: scale,
-        leftPos: leftPos
-      })
 
     }
 
-  }
-}
+    calcScale2(x) {
+      let formula;
 
-const carousel = new CardCarousel(cardsContainer)
+      if (x <= 0) {
+        formula = 1 - -1 / 5 * x
 
-$('.slider').slick({
-            //dots: true,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '12%',
-            slidesToShow: 3,
-            arrows: true,
-            speed: 500,
-            mobileFirst: true,
-            responsive: [{
+        return formula
+      } else if (x > 0) {
+        formula = 1 - 1 / 5 * x
 
-                breakpoint: 1840,
-                settings: {
-                    slidesToShow: 3,
-                    infinite: true,
-                    centerMode: true,
-                    centerPadding: '18.5%',
-                    slidesToShow: 3,
-                    arrows: true,
-                    speed: 500,
-                },
+        return formula
+      }
+    }
 
-            }]
-        });
-      $('card-carousel').slick({
-        swipe: function(event, slick, direction){
-          var angle = Math.abs(event.originalEvent.touches[0].pageY - event.originalEvent.touches[0].pageX);
-          if(angle > 45){
-            return false;
+    calcScale(x) {
+      const formula = 1 - 1 / 5 * Math.pow(x, 2)
+
+      if (formula <= 0) {
+        return 0
+      } else {
+        return formula
+      }
+    }
+
+    checkOrdering(card, x, xDist) {
+      const original = parseInt(card.dataset.x)
+      const rounded = Math.round(xDist)
+      let newX = x
+
+      if (x !== x + rounded) {
+        if (x + rounded > original) {
+          if (x + rounded > this.centerIndex) {
+
+            newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+          }
+        } else if (x + rounded < original) {
+          if (x + rounded < -this.centerIndex) {
+
+            newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
           }
         }
-      });
-  </script>
-  <script>
 
-    function checked_headermobile(_this) {
-      if (_this.checked) {
-        document.getElementsByTagName("html")[0].style.height = '100%';
-        document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
+        this.xScale[newX + rounded] = card;
+      }
+
+      const temp = -Math.abs(newX + rounded)
+
+      this.updateCards(card, { zIndex: temp })
+
+      return newX;
+    }
+
+    moveCards(data) {
+
+      let xDist;
+
+      if (data != null) {
+        this.container.classList.remove("smooth-return")
+        xDist = data.x / 250;
       } else {
-        document.getElementsByTagName("html")[0].style.overflowY = 'auto';
-        document.getElementsByTagName("html")[0].style.height = 'auto';
+
+
+        this.container.classList.add("smooth-return")
+        xDist = 0;
+
+        for (let x in this.xScale) {
+          this.updateCards(this.xScale[x], {
+            x: x,
+            zIndex: Math.abs(Math.abs(x) - this.centerIndex)
+          })
+        }
+      }
+
+      for (let i = 0; i < this.cards.length; i++) {
+        const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
+          scale = this.calcScale(x + xDist),
+          scale2 = this.calcScale2(x + xDist),
+          leftPos = this.calcPos(x + xDist, scale2)
+
+        if (x == 1) {
+          this.cards[i].style.opacity = 0.5;
+          this.updateCards(this.cards[i], {
+            scale: scale,
+            leftPos: 65,
+            opacity: 0.5
+          })
+          continue;
+        }
+        if (x == -1) {
+          this.cards[i].style.opacity = 0.5;
+          this.updateCards(this.cards[i], {
+            scale: scale,
+            leftPos: -9,
+            opacity: 0.5
+          })
+          continue;
+        }
+        this.updateCards(this.cards[i], {
+          scale: scale,
+          leftPos: leftPos
+        })
+
+      }
+
+    }
+  }
+
+  const carousel = new CardCarousel(cardsContainer)
+
+  $('.slider').slick({
+    //dots: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '12%',
+    slidesToShow: 3,
+    arrows: true,
+    speed: 500,
+    mobileFirst: true,
+    responsive: [{
+
+      breakpoint: 1840,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '18.5%',
+        slidesToShow: 3,
+        arrows: true,
+        speed: 500,
+      },
+
+    }]
+  });
+  $('card-carousel').slick({
+    swipe: function (event, slick, direction) {
+      var angle = Math.abs(event.originalEvent.touches[0].pageY - event.originalEvent.touches[0].pageX);
+      if (angle > 45) {
+        return false;
       }
     }
+  });
 </script>
+<script>
+
+  function checked_headermobile(_this) {
+    if (_this.checked) {
+      document.getElementsByTagName("html")[0].style.height = '100%';
+      document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
+    } else {
+      document.getElementsByTagName("html")[0].style.overflowY = 'auto';
+      document.getElementsByTagName("html")[0].style.height = 'auto';
+    }
+  }
+</script>
+
 </html>
