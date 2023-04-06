@@ -296,7 +296,7 @@
       </div>
 
       <div class="header-right__item-burger">
-        <input id="menu-toggle" type="checkbox" onChange="checked_headermobile(this)" />
+        <input id="menu-toggle" type="checkbox" />
         <label id="hamburger-menu" class='menu-button-container' for="menu-toggle">
           <div class="menu-button__burger">
             <div class='menu-button'></div>
@@ -989,21 +989,6 @@
     }
   });
 </script>
-<script>
 
-  function checked_headermobile(_this) {
-    if (_this.checked) {
-      document.getElementsByTagName("html")[0].style.height = '100%';
-      document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
-      document.getElementsByTagName("body")[0].style.height = '100%';
-      document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
-    } else {
-      document.getElementsByTagName("html")[0].style.overflowY = 'auto';
-      document.getElementsByTagName("html")[0].style.height = 'auto';
-      document.getElementsByTagName("body")[0].style.overflowY = 'auto';
-      document.getElementsByTagName("body")[0].style.height = 'auto';
-    }
-  }
-</script>
 
 </html>

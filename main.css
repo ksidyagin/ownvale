@@ -504,6 +504,7 @@ article {
   overflow: hidden;
   padding: 50px 20px;
   touch-action: none;
+  margin-top: 70px;
 }
 
 .card-carousel {
