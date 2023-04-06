@@ -15,12 +15,6 @@
   <link rel="stylesheet" type="text/css" href="./general.css" />
   <title>Hello, world!</title>
   <style>
-    body > .mainwrapper {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
-  }
   </style>
 </head>
 
@@ -331,8 +325,6 @@
 
     </div>
   </div>
-  <div class="mainwrapper">
-
     <div class="carousel-swiper">
       <section>
         <div class="slider">
@@ -587,7 +579,6 @@
     <br>
     <br>
     <br>
-  </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
@@ -1006,13 +997,11 @@
       document.getElementsByTagName("html")[0].style.overflowY = 'hidden';
       document.getElementsByTagName("body")[0].style.height = '100%';
       document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
-      document.getElementsByClassName("mainwrapper")[0].style.overflowY = 'hidden'; 
     } else {
       document.getElementsByTagName("html")[0].style.overflowY = 'auto';
       document.getElementsByTagName("html")[0].style.height = 'auto';
       document.getElementsByTagName("body")[0].style.overflowY = 'auto';
       document.getElementsByTagName("body")[0].style.height = 'auto';
-      document.getElementsByClassName("mainwrapper")[0].style.overflowY = 'scroll'; 
     }
   }
 </script>
